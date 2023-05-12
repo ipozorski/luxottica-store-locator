@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      window.locatorTenancy = {
+          id: "--------",
+          name: "---------",
+          currentLanguage: "en-us",
+          locatorRootUri: "https://urldefense.com/v3/__https://development-locator.essilor-ditac.com__;!!PINR1X3Z!O6-rZx221mqVUzKqTA4vgkzJdlfnD2FsFiVOJRgEG8IlTNUDXznYcUZN8N56i_LeZJrtHKFqvw$ ",
+          apiRootUri: "https://urldefense.com/v3/__https://ditac-dev-api.ecplocator.net/api__;!!PINR1X3Z!O6-rZx221mqVUzKqTA4vgkzJdlfnD2FsFiVOJRgEG8IlTNUDXznYcUZN8N56i_LeZJoMPLLmbA$ ",
+          googleMapsKey: "AIzaSyAvJbNKHGy6Jo3iJ40EesUbYeW18DRy6MY",
+          googleAnalyticsId: "--------"
+      };
+    </script>
+    <style>
+        #ecplocatornetinject{
+            position: relative;
+            min-height: 450px;
+            margin: 50px 0;
+        }
+        .react-loader {
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            z-index: 9999;
+        }
+        .react-loader .spinner {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .react-loader .spinner {
+            animation: initialRotator 1.4s linear infinite;
+        }
+
+        @keyframes initialRotator {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(270deg);
+            }
+        }
+
+        .react-loader-path {
+            stroke-dasharray: 46.75;
+            stroke-dashoffset: 0;
+            transform-origin: center;
+            animation: dash 1.4s ease-in-out infinite;
+        }
+
+        @keyframes dash {
+            0% {
+            stroke-dashoffset: 46.75;
+            }
+            50% {
+            stroke-dashoffset: 46.75/4;
+            transform: rotate(135deg);
+            }
+            100% {
+            stroke-dashoffset: 46.75;
+            transform: rotate(450deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    Store Locator Integration
+    <div id="ecplocatornetinject">
+        <div class="react-loader">
+            <svg class="spinner" width="16.25px" height="16.25px" viewBox="0 0 16.5 16.5" xmlns="https://urldefense.com/v3/__http://www.w3.org/2000/svg__;!!PINR1X3Z!O6-rZx221mqVUzKqTA4vgkzJdlfnD2FsFiVOJRgEG8IlTNUDXznYcUZN8N56i_LeZJpbREj7Xw$ ">
+                <circle
+                class="react-loader-path"
+                stroke="#2158CB"
+                fill="none"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                cx="8.25"
+                cy="8.25"
+                r="7.5"
+                />
+            </svg>
+        </div>
+    </div>
+    <footer>
+       <script 
+            type="text/javascript"
+            src="https://urldefense.com/v3/__https://maps.googleapis.com/maps/api/js?key=AIzaSyAvJbNKHGy6Jo3iJ40EesUbYeW18DRy6MY&libraries=places__;!!PINR1X3Z!O6-rZx221mqVUzKqTA4vgkzJdlfnD2FsFiVOJRgEG8IlTNUDXznYcUZN8N56i_LeZJpTIX0LmQ$ ">
+        </script>
+        <script 
+            type="text/javascript"
+            src="https://urldefense.com/v3/__https://development-locator.essilor-ditac.com/ecp-locator-loader.js__;!!PINR1X3Z!O6-rZx221mqVUzKqTA4vgkzJdlfnD2FsFiVOJRgEG8IlTNUDXznYcUZN8N56i_LeZJqL38yzoQ$ ">
+        </script>
+    </footer>
+</body>
+</html>
